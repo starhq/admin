@@ -1,0 +1,34 @@
+<!-- <div class="alert alert-{{config.className}}" role="alert">
+    <button type="button" class="close" ng-click="ngdgclose()">
+        <span aria-hidden="true">x</span><span class="sr-only">Close</span>
+    </button>
+    <h4 ng-bind="config.Title"></h4>
+    <p ng-bind="message" class="text-center"></p>
+    <div class="clearfix text-right center-block" style="margin-top:10px">
+        <button type="button" class="btn btn-primary" ng-if="config.showOkBtn" ng-click="dgYesPress()">{{config.OkBtnText}}</button>
+        <button type="button" class="btn btn-danger" ng-if="config.showCloseBtn" ng-click="dgNoPress()">{{config.CloseBtnText}}</button>
+    </div>
+</div> -->
+<div class="example-modal">
+    <div class="modal modal-{{config.className}}">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="ngdgclose()">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">{{config.Title}}</h4>
+                </div>
+                <div class="modal-body">
+                    <p ng-bind="message" class="text-center"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline pull-left" data-dismiss="modal" ng-if="config.showOkBtn" ng-click="dgYesPress()">{{config.OkBtnText}}</button>
+                    <button type="button" class="btn btn-outline" ng-if="config.showCloseBtn" ng-click="dgNoPress()">{{config.CloseBtnText}}</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+</div>

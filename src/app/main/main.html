@@ -1,0 +1,24 @@
+<!-- <div class="wrapper">
+    <div ui-view="header"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-2">
+                <div ui-view="left"></div>
+            </div>
+            <div class="col-xs-10">
+                <div ui-view="body"></div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<div class="wrapper">
+    <div ng-include="'app/header/header.html'" ng-controller="HeaderController"></div>
+    <div ng-include="'app/sidebar/sidebar.html'" ng-controller="SidebarController"></div>
+    <div ui-view></div>
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            <b>Version</b> 2.3.2
+        </div>
+        <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.
+    </footer>
+</div>
