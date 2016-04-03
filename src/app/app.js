@@ -24,9 +24,21 @@
                 templateUrl: 'app/main/main.html'
             }).state('main.index', {
                 url: '',
-                templateUrl: 'app/main/dashboard/dashboard2.html',
+                templateUrl: 'app/main/dashboard2/dashboard2.html',
                 controller: 'Dashboard2Controller',
                 controllerAs: 'dsahboard2',
+                parent: 'main'
+            }).state('main.dashboard2', {
+                url: '/dashboard2',
+                templateUrl: 'app/main/dashboard2/dashboard2.html',
+                controller: 'Dashboard2Controller',
+                controllerAs: 'dsahboard2',
+                parent: 'main'
+            }).state('main.dashboard1', {
+                url: '/dashboard1',
+                templateUrl: 'app/main/dashboard1/dashboard1.html',
+                controller: 'Dashboard1Controller',
+                controllerAs: 'dsahboard1',
                 parent: 'main'
             });
         // .state('main', {
