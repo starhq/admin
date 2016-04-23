@@ -250,3 +250,9 @@ body {
 .ngdialog.ngdialog-theme-flat .ngdialog-button.ngdialog-button-secondary:active {
     color: #777;
 }
+
+canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
