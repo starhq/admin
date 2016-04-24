@@ -38,7 +38,7 @@
                 url: '/dashboard1',
                 templateUrl: 'app/main/dashboard1/dashboard1.html',
                 controller: 'Dashboard1Controller',
-                controllerAs: 'dsahboard1',
+                controllerAs: 'dashboard1',
                 parent: 'main'
             });
         // .state('main', {

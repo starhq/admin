@@ -6,16 +6,13 @@
         .controller('Dashboard1Controller', DashBoardController);
 
     /** @ngInject */
-    function DashBoardController($scope) {
+    function DashBoardController() {
 
         var vm = this;
+        vm.confirm = confirm;
 
-        $scope.$watch('vm.activeTabDate', function(newValue, oldValue) {
-            if (newValue !== oldValue) {
-                console.log('--' + newValue);
-            }
-        });
-
+        vm.confirm = function(data){
+        }
 
         function initSortable() {
             angular.element(".connectedSortable").sortable({
@@ -29,5 +26,7 @@
         }
 
         initSortable();
+
+
     }
 })();
