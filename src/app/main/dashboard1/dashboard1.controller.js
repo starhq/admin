@@ -11,10 +11,14 @@
         var vm = this;
         vm.confirm = confirm;
 
-        vm.confirm = function(data){
-        }
-
         function initSortable() {
+            angular.element(".todo-list").sortable({
+                placeholder: "sort-highlight",
+                handle: ".handle",
+                forcePlaceholderSize: true,
+                zIndex: 999999
+            });
+
             angular.element(".connectedSortable").sortable({
                 placeholder: "sort-highlight",
                 connectWith: ".connectedSortable",
@@ -26,7 +30,6 @@
         }
 
         initSortable();
-
 
     }
 })();
