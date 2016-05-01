@@ -260,3 +260,9 @@ canvas {
 .nav-tabs>li {
     float: right;
 }
+
+.datepicker-inline,
+.datepicker table {
+    box-sizing: border-box;
+    width: 100%;
+}
