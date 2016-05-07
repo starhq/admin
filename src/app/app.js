@@ -64,6 +64,12 @@
                 controller: 'CollapsedSidebarController',
                 controllerAs: 'collapsedsidebar',
                 parent: 'main'
+            }).state('main.widgets', {
+                url: '/widgets',
+                templateUrl: 'app/main/widgets/widgets.html',
+                controller: 'WidgetsController',
+                controllerAs: 'widgets',
+                parent: 'main'
             });
         // .state('main', {
         //     url: '/main',
