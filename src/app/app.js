@@ -70,6 +70,12 @@
                 controller: 'WidgetsController',
                 controllerAs: 'widgets',
                 parent: 'main'
+            }).state('main.chartjs', {
+                url: '/chartjs',
+                templateUrl: 'app/main/chartjs/chartjs.html',
+                controller: 'CharJSController',
+                controllerAs: 'chartjs',
+                parent: 'main'
             });
         // .state('main', {
         //     url: '/main',
