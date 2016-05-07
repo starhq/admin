@@ -40,6 +40,30 @@
                 controller: 'Dashboard1Controller',
                 controllerAs: 'dashboard1',
                 parent: 'main'
+            }).state('main.top', {
+                url: '/top',
+                templateUrl: 'app/main/top/top.html',
+                controller: 'TopController',
+                controllerAs: 'top',
+                parent: 'main'
+            }).state('main.boxed', {
+                url: '/boxed',
+                templateUrl: 'app/main/boxed/boxed.html',
+                controller: 'BoxedController',
+                controllerAs: 'boxed',
+                parent: 'main'
+            }).state('main.fixed', {
+                url: '/fixed',
+                templateUrl: 'app/main/fixed/fixed.html',
+                controller: 'FixedController',
+                controllerAs: 'fixed',
+                parent: 'main'
+            }).state('main.collapsed-sidebar', {
+                url: '/collapsed-sidebar',
+                templateUrl: 'app/main/collapsed-sidebar/collapsed-sidebar.html',
+                controller: 'CollapsedSidebarController',
+                controllerAs: 'collapsedsidebar',
+                parent: 'main'
             });
         // .state('main', {
         //     url: '/main',

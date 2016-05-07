@@ -14,7 +14,9 @@
 <div class="wrapper">
     <div ng-include="'app/header/header.html'" ng-controller="HeaderController"></div>
     <div ng-include="'app/sidebar/sidebar.html'" ng-controller="SidebarController"></div>
-    <div ui-view></div>
+    <div class="content-wrapper">
+        <div ui-view></div>
+    </div>
     <footer class="main-footer">
         <div class="pull-right hidden-xs">
             <b>Version</b> 2.3.2
