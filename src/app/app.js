@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('admin', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'ui.bootstrap', 'toastr', 'ngDialog', 'angular.morris-chart']).config(routerConfig);
+        .module('admin', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'ui.bootstrap', 'toastr', 'ngDialog', 'angular.morris-chart', 'angular-flot']).config(routerConfig);
 
     /** @ngInject */
     function routerConfig($stateProvider, $urlRouterProvider) {
@@ -81,6 +81,12 @@
                 templateUrl: 'app/main/morris/morris.html',
                 controller: 'MorrisController',
                 controllerAs: 'morris',
+                parent: 'main'
+            }).state('main.flot', {
+                url: '/flot',
+                templateUrl: 'app/main/flot/flot.html',
+                controller: 'FlotController',
+                controllerAs: 'flot',
                 parent: 'main'
             });
         // .state('main', {
