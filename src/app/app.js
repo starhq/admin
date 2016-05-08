@@ -76,6 +76,12 @@
                 controller: 'CharJSController',
                 controllerAs: 'chartjs',
                 parent: 'main'
+            }).state('main.morris', {
+                url: '/morris',
+                templateUrl: 'app/main/morris/morris.html',
+                controller: 'MorrisController',
+                controllerAs: 'morris',
+                parent: 'main'
             });
         // .state('main', {
         //     url: '/main',
