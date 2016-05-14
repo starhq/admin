@@ -88,6 +88,12 @@
                 controller: 'FlotController',
                 controllerAs: 'flot',
                 parent: 'main'
+            }).state('main.inline', {
+                url: '/inline',
+                templateUrl: 'app/main/inline/inline.html',
+                controller: 'InlineController',
+                controllerAs: 'inline',
+                parent: 'main'
             });
         // .state('main', {
         //     url: '/main',
