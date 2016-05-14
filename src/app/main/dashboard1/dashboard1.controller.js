@@ -1,3 +1,4 @@
+/* global moment */
 (function() {
     'use strict';
 
@@ -127,7 +128,8 @@
                 startDate: moment().subtract(29, 'days'),
                 endDate: moment()
             }, function(start, end) {
-                console.log("You chose: " + start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+                start.format('MMMM D, YYYY');
+                end.format('MMMM D, YYYY');
             });
 
             // knob

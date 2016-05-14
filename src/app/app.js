@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('admin', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'ui.bootstrap', 'toastr', 'ngDialog', 'angular.morris-chart', 'angular-flot']).config(routerConfig);
+        .module('admin', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'ui.bootstrap', 'toastr', 'ngDialog', 'angular.morris-chart']).config(routerConfig);
 
     /** @ngInject */
     function routerConfig($stateProvider, $urlRouterProvider) {

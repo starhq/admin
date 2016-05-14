@@ -1,3 +1,4 @@
+/* global Chart */
 (function() {
     'use strict';
 
