@@ -62,18 +62,14 @@
 
         function drawDocSparklines() {
 
-            // Bar + line composite charts
             angular.element('#compositebar').sparkline('html', { type: 'bar', barColor: '#aaf' });
             angular.element('#compositebar').sparkline([4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7], { composite: true, fillColor: false, lineColor: 'red' });
 
 
-            // Line charts taking their values from the tag
             angular.element('.sparkline-1').sparkline();
 
-            // Larger line charts for the docs
             angular.element('.largeline').sparkline('html', { type: 'line', height: '2.5em', width: '4em' });
 
-            // Customized line chart
             angular.element('#linecustom').sparkline('html', {
                 height: '1.5em',
                 width: '8em',
@@ -85,7 +81,6 @@
                 spotRadius: 3
             });
 
-            // Bar charts using inline values
             angular.element('.sparkbar').sparkline('html', { type: 'bar' });
 
             angular.element('.barformat').sparkline([1, 3, 5, 3, 8], {
@@ -96,40 +91,31 @@
                 }
             });
 
-            // Tri-state charts using inline values
             angular.element('.sparktristate').sparkline('html', { type: 'tristate' });
             angular.element('.sparktristatecols').sparkline('html', { type: 'tristate', colorMap: { '-2': '#fa7', '2': '#44f' } });
 
-            // Composite line charts, the second using values supplied via javascript
             angular.element('#compositeline').sparkline('html', { fillColor: false, changeRangeMin: 0, chartRangeMax: 10 });
             angular.element('#compositeline').sparkline([4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7], { composite: true, fillColor: false, lineColor: 'red', changeRangeMin: 0, chartRangeMax: 10 });
 
-            // Line charts with normal range marker
             angular.element('#normalline').sparkline('html', { fillColor: false, normalRangeMin: -1, normalRangeMax: 8 });
             angular.element('#normalExample').sparkline('html', { fillColor: false, normalRangeMin: 80, normalRangeMax: 95, normalRangeColor: '#4f4' });
 
-            // Discrete charts
             angular.element('.discrete1').sparkline('html', { type: 'discrete', lineColor: 'blue', xwidth: 18 });
             angular.element('#discrete2').sparkline('html', { type: 'discrete', lineColor: 'blue', thresholdColor: 'red', thresholdValue: 4 });
 
-            // Bullet charts
             angular.element('.sparkbullet').sparkline('html', { type: 'bullet' });
 
-            // Pie charts
             angular.element('.sparkpie').sparkline('html', { type: 'pie', height: '1.0em' });
 
-            // Box plots
             angular.element('.sparkboxplot').sparkline('html', { type: 'box' });
             angular.element('.sparkboxplotraw').sparkline([1, 3, 5, 8, 10, 15, 18], { type: 'box', raw: true, showOutliers: true, target: 6 });
 
-            // Box plot with specific field order
             angular.element('.boxfieldorder').sparkline('html', {
                 type: 'box',
                 tooltipFormatFieldlist: ['med', 'lq', 'uq'],
                 tooltipFormatFieldlistKey: 'field'
             });
 
-            // click event demo sparkline
             angular.element('.clickdemo').sparkline();
             angular.element('.clickdemo').bind('sparklineClick', function(ev) {
                 var sparkline = ev.sparklines[0],
@@ -137,7 +123,6 @@
                 alert("Clicked on x=" + region.x + " y=" + region.y);
             });
 
-            // mouseover event demo sparkline
             angular.element('.mouseoverdemo').sparkline();
             angular.element('.mouseoverdemo').bind('sparklineRegionChange', function(ev) {
                 var sparkline = ev.sparklines[0],
@@ -148,13 +133,6 @@
             });
         }
 
-        /**
-         ** Draw the little mouse speed animated graph
-         ** This just attaches a handler to the mousemove event to see
-         ** (roughly) how far the mouse has moved
-         ** and then updates the display a couple of times a second via
-         ** setTimeout()
-         **/
         function drawMouseSpeedDemo() {
             var mrefreshinterval = 500; // update display every 500ms
             var lastmousex = -1;
@@ -186,7 +164,6 @@
                 lastmousetime = timenow;
                 $timeout(mdraw, mrefreshinterval);
             };
-            // We could use setInterval instead, but I prefer to do it this way
             $timeout(mdraw, mrefreshinterval);
         }
 
