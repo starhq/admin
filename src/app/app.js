@@ -106,6 +106,18 @@
                 controller: 'DataController',
                 controllerAs: 'data',
                 parent: 'main'
+            }).state('main.generalform', {
+                url: '/generalform',
+                templateUrl: 'app/main/form/general.html',
+                controller: 'GeneralFormController',
+                controllerAs: 'generalform',
+                parent: 'main'
+            }).state('main.advanced', {
+                url: '/advanced',
+                templateUrl: 'app/main/advanced/advanced.html',
+                controller: 'AdvancedController',
+                controllerAs: 'advanced',
+                parent: 'main'
             });
         // .state('main', {
         //     url: '/main',
