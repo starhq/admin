@@ -94,6 +94,18 @@
                 controller: 'InlineController',
                 controllerAs: 'inline',
                 parent: 'main'
+            }).state('main.simple', {
+                url: '/simple',
+                templateUrl: 'app/main/simple/simple.html',
+                controller: 'SimpleController',
+                controllerAs: 'simple',
+                parent: 'main'
+            }).state('main.data', {
+                url: '/data',
+                templateUrl: 'app/main/data/data.html',
+                controller: 'DataController',
+                controllerAs: 'data',
+                parent: 'main'
             });
         // .state('main', {
         //     url: '/main',
