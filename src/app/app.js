@@ -124,6 +124,12 @@
                 controller: 'EditorsController',
                 controllerAs: 'editors',
                 parent: 'main'
+            }).state('main.general', {
+                url: '/general',
+                templateUrl: 'app/main/general/general.html',
+                controller: 'GeneralController',
+                controllerAs: 'general',
+                parent: 'main'
             });
         // .state('main', {
         //     url: '/main',
