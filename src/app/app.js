@@ -118,6 +118,12 @@
                 controller: 'AdvancedController',
                 controllerAs: 'advanced',
                 parent: 'main'
+            }).state('main.editors', {
+                url: '/editors',
+                templateUrl: 'app/main/editors/editors.html',
+                controller: 'EditorsController',
+                controllerAs: 'editors',
+                parent: 'main'
             });
         // .state('main', {
         //     url: '/main',
