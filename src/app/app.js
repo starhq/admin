@@ -142,6 +142,12 @@
                 controller: 'ButtonsController',
                 controllerAs: 'buttons',
                 parent: 'main'
+            }).state('main.sliders', {
+                url: '/sliders',
+                templateUrl: 'app/main/sliders/sliders.html',
+                controller: 'SlidersController',
+                controllerAs: 'sliders',
+                parent: 'main'
             });
         // .state('main', {
         //     url: '/main',

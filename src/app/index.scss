@@ -432,7 +432,6 @@ canvas {
     z-index: 7;
 }
 
-
 //icons
 .bs-glyphicons {
     padding-left: 0;
@@ -475,4 +474,8 @@ canvas {
     .bs-glyphicons li {
         width: 12.5%;
     }
+}
+
+#slider1c .slider-selection {
+    background: red;
 }
