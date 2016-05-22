@@ -154,6 +154,12 @@
                 controller: 'TimelineController',
                 controllerAs: 'timeline',
                 parent: 'main'
+            }).state('main.modals', {
+                url: '/modals',
+                templateUrl: 'app/main/modals/modals.html',
+                controller: 'ModalsController',
+                controllerAs: 'modals',
+                parent: 'main'
             });
         // .state('main', {
         //     url: '/main',
