@@ -148,6 +148,12 @@
                 controller: 'SlidersController',
                 controllerAs: 'sliders',
                 parent: 'main'
+            }).state('main.timeline', {
+                url: '/timeline',
+                templateUrl: 'app/main/timeline/timeline.html',
+                controller: 'TimelineController',
+                controllerAs: 'timeline',
+                parent: 'main'
             });
         // .state('main', {
         //     url: '/main',
