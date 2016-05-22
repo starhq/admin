@@ -130,6 +130,18 @@
                 controller: 'GeneralController',
                 controllerAs: 'general',
                 parent: 'main'
+            }).state('main.icons', {
+                url: '/icons',
+                templateUrl: 'app/main/icons/icons.html',
+                controller: 'IconsController',
+                controllerAs: 'icons',
+                parent: 'main'
+            }).state('main.buttons', {
+                url: '/buttons',
+                templateUrl: 'app/main/buttons/buttons.html',
+                controller: 'ButtonsController',
+                controllerAs: 'buttons',
+                parent: 'main'
             });
         // .state('main', {
         //     url: '/main',
