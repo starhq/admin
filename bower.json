@@ -1,119 +1,130 @@
 {
-  "name": "admin",
-  "version": "0.0.0",
-  "dependencies": {
-    "angular-animate": "~1.4.2",
-    "angular-cookies": "~1.4.2",
-    "angular-touch": "~1.4.2",
-    "angular-sanitize": "~1.4.2",
-    "angular-messages": "~1.4.2",
-    "angular-aria": "~1.4.2",
-    "jquery": "~2.1.4",
-    "jquery-ui": "^1.11.4",
-    "angular-resource": "~1.4.2",
-    "angular-ui-router": "~0.2.15",
-    "bootstrap-sass": "~3.3.5",
-    "angular-bootstrap": "~0.13.4",
-    "malarkey": "yuanqing/malarkey#~1.3.1",
-    "angular-toastr": "~1.5.0",
-    "moment": "~2.10.6",
-    "animate.css": "~3.4.0",
-    "angular": "~1.4.2",
-    "AdminLTE": "admin-lte#~2.3.2",
-    "iCheck": "icheck#~1.0.2",
-    "ng-dialog": "~0.5.6",
-    "font-awesome": "fontawesome#~4.5.0",
-    "Chart.js": "^2.0.0",
-    "bower-jvectormap": "^1.2.2",
-    "bower-jquery-sparkline": "^2.1.3",
-    "angular-morris-chart": "^1.2.0",
-    "bootstrap3-wysihtml5-bower": "^0.3.3",
-    "bootstrap-daterangepicker": "^2.1.19",
-    "jquery-knob": "^1.2.13",
-    "bootstrap-datepicker": "^1.6.1",
-    "jquery-slimscroll": "^1.3.7",
-    "Flot": "flot#^0.8.3",
-    "datatables.net-bs": "^1.10.11",
-    "select2": "^4.0.2",
-    "jquery.inputmask": "^3.3.1",
-    "mjolnic-bootstrap-colorpicker": "bootstrap-colorpicker#^2.3.3",
-    "bootstrap-timepicker": "^0.5.2",
-    "ckeditor": "^4.5.9",
-    "ion.rangeSlider": "ionrangeslider#^2.1.4",
-    "seiyria-bootstrap-slider": "^7.0.3"
-  },
-  "devDependencies": {
-    "angular-mocks": "~1.4.2"
-  },
-  "overrides": {
-    "bootstrap-sass": {
-      "main": [
-        "assets/stylesheets/_bootstrap.scss",
-        "assets/fonts/bootstrap/glyphicons-halflings-regular.eot",
-        "assets/fonts/bootstrap/glyphicons-halflings-regular.svg",
-        "assets/fonts/bootstrap/glyphicons-halflings-regular.ttf",
-        "assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
-        "assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
-      ]
+    "name": "admin",
+    "version": "0.0.0",
+    "dependencies": {
+        "angular-animate": "~1.4.2",
+        "angular-cookies": "~1.4.2",
+        "angular-touch": "~1.4.2",
+        "angular-sanitize": "~1.4.2",
+        "angular-messages": "~1.4.2",
+        "angular-aria": "~1.4.2",
+        "jquery": "~2.1.4",
+        "jquery-ui": "^1.11.4",
+        "angular-resource": "~1.4.2",
+        "angular-ui-router": "~0.2.15",
+        "bootstrap-sass": "~3.3.5",
+        "angular-bootstrap": "~0.13.4",
+        "malarkey": "yuanqing/malarkey#~1.3.1",
+        "angular-toastr": "~1.5.0",
+        "moment": "~2.10.6",
+        "animate.css": "~3.4.0",
+        "angular": "~1.4.2",
+        "AdminLTE": "admin-lte#~2.3.2",
+        "iCheck": "icheck#~1.0.2",
+        "ng-dialog": "~0.5.6",
+        "font-awesome": "fontawesome#~4.5.0",
+        "Chart.js": "^2.0.0",
+        "bower-jvectormap": "^1.2.2",
+        "bower-jquery-sparkline": "^2.1.3",
+        "angular-morris-chart": "^1.2.0",
+        "bootstrap3-wysihtml5-bower": "^0.3.3",
+        "bootstrap-daterangepicker": "^2.1.19",
+        "jquery-knob": "^1.2.13",
+        "bootstrap-datepicker": "^1.6.1",
+        "jquery-slimscroll": "^1.3.7",
+        "Flot": "flot#^0.8.3",
+        "datatables.net-bs": "^1.10.11",
+        "select2": "^4.0.2",
+        "jquery.inputmask": "^3.3.1",
+        "mjolnic-bootstrap-colorpicker": "bootstrap-colorpicker#^2.3.3",
+        "bootstrap-timepicker": "^0.5.2",
+        "ckeditor": "^4.5.9",
+        "ion.rangeSlider": "ionrangeslider#^2.1.4",
+        "seiyria-bootstrap-slider": "^7.0.3"
     },
-    "admin-lte": {
-      "main": [
-        "dist/css/AdminLTE.css",
-        "dist/js/app.js"
-      ],
-      "dependencies": {
-        "bootstrap": "*"
-      }
+    "devDependencies": {
+        "angular-mocks": "~1.4.2"
     },
-    "Chart.js": {
-      "main": [
-        "dist/Chart.js"
-      ]
+    "overrides": {
+        "bootstrap-sass": {
+            "main": [
+                "assets/stylesheets/_bootstrap.scss",
+                "assets/fonts/bootstrap/glyphicons-halflings-regular.eot",
+                "assets/fonts/bootstrap/glyphicons-halflings-regular.svg",
+                "assets/fonts/bootstrap/glyphicons-halflings-regular.ttf",
+                "assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
+                "assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
+            ]
+        },
+        "admin-lte": {
+            "main": [
+                "dist/css/AdminLTE.css",
+                "dist/js/app.js"
+            ],
+            "dependencies": {
+                "bootstrap": "*"
+            }
+        },
+        "Chart.js": {
+            "main": [
+                "dist/Chart.js"
+            ]
+        },
+        "bower-jvectormap": {
+            "main": [
+                "jquery-jvectormap-1.2.2.css",
+                "jquery-jvectormap-1.2.2.min.js",
+                "jquery-jvectormap-world-mill-en.js"
+            ]
+        },
+        "Flot": {
+            "main": [
+                "jquery.flot.js",
+                "jquery.flot.resize.js",
+                "jquery.flot.pie.js",
+                "jquery.flot.categories.js"
+            ]
+        },
+        "select2": {
+            "main": [
+                "dist/css/select2.min.css",
+                "dist/js/select2.full.min.js"
+            ]
+        },
+        "jquery-slimscroll": {
+            "main": [
+                "jquery.slimscroll.min.js"
+            ]
+        },
+        "ion.rangeSlider": {
+            "main": [
+                "css/ion.rangeSlider.css",
+                "css/ion.rangeSlider.skinNice.css",
+                "js/ion.rangeSlider.js"
+            ]
+        },
+        "font-awesome": {
+            "main": [
+                "css/font-awesome.min.css"
+            ]
+        },
+        "iCheck": {
+            "main": [
+                "skins/all.css",
+                "icheck.js"
+            ]
+        },
+        "jquery.inputmask": {
+            "main": [
+                "dist/mask/inputmask.js",
+                "dist/mask/jquery.inputmask.js",
+                "dist/mask/inputmask.date.extensions.js",
+                "dist/mask/inputmask.extensions.js"
+            ]
+        }
     },
-    "bower-jvectormap": {
-      "main": [
-        "jquery-jvectormap-1.2.2.css",
-        "jquery-jvectormap-1.2.2.min.js",
-        "jquery-jvectormap-world-mill-en.js"
-      ]
-    },
-    "Flot": {
-      "main": [
-        "jquery.flot.js",
-        "jquery.flot.resize.js",
-        "jquery.flot.pie.js",
-        "jquery.flot.categories.js"
-      ]
-    },
-    "select2": {
-      "main": [
-        "dist/css/select2.min.css",
-        "dist/js/select2.full.min.js"
-      ]
-    },
-    "jquery-slimscroll": {
-      "main": [
-        "jquery.slimscroll.min.js"
-      ]
-    },
-    "ion.rangeSlider": {
-      "main": [
-        "css/ion.rangeSlider.css",
-        "css/ion.rangeSlider.skinNice.css",
-        "js/ion.rangeSlider.js"
-      ]
-    },
-    "jquery.inputmask": {
-      "main": [
-        "dist/mask/inputmask.js",
-        "dist/mask/jquery.inputmask.js",
-        "dist/mask/inputmask.date.extensions.js",
-        "dist/mask/inputmask.extensions.js"
-      ]
+    "resolutions": {
+        "jquery": "~2.1.4",
+        "angular": "~1.4.2"
     }
-  },
-  "resolutions": {
-    "jquery": "~2.1.4",
-    "angular": "~1.4.2"
-  }
 }
