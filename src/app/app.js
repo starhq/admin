@@ -160,6 +160,12 @@
                 controller: 'ModalsController',
                 controllerAs: 'modals',
                 parent: 'main'
+            }).state('main.calendar', {
+                url: '/calendar',
+                templateUrl: 'app/main/calendar/calendar.html',
+                controller: 'CalendarController',
+                controllerAs: 'calendar',
+                parent: 'main'
             });
         // .state('main', {
         //     url: '/main',
