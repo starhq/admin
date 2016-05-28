@@ -184,6 +184,18 @@
                 controller: 'ReadController',
                 controllerAs: 'read',
                 parent: 'main'
+            }).state('main.invoice', {
+                url: '/invoice',
+                templateUrl: 'app/main/invoice/invoice.html',
+                controller: 'InvoiceController',
+                controllerAs: 'invoice',
+                parent: 'main'
+            }).state('main.profile', {
+                url: '/profile',
+                templateUrl: 'app/main/profile/profile.html',
+                controller: 'ProfileController',
+                controllerAs: 'profile',
+                parent: 'main'
             });
         // .state('main', {
         //     url: '/main',
