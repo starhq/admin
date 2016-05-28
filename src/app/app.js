@@ -166,6 +166,24 @@
                 controller: 'CalendarController',
                 controllerAs: 'calendar',
                 parent: 'main'
+            }).state('main.mailbox', {
+                url: '/mailbox',
+                templateUrl: 'app/main/mailbox/mailbox.html',
+                controller: 'MailboxController',
+                controllerAs: 'mailbox',
+                parent: 'main'
+            }).state('main.compose', {
+                url: '/compose',
+                templateUrl: 'app/main/compose/compose.html',
+                controller: 'ComposeController',
+                controllerAs: 'compose',
+                parent: 'main'
+            }).state('main.read', {
+                url: '/read',
+                templateUrl: 'app/main/read/read.html',
+                controller: 'ReadController',
+                controllerAs: 'read',
+                parent: 'main'
             });
         // .state('main', {
         //     url: '/main',
