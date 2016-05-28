@@ -202,6 +202,30 @@
                 controller: 'LockController',
                 controllerAs: 'lock',
                 parent: 'main'
+            }).state('main.404', {
+                url: '/404',
+                templateUrl: 'app/main/404/404error.html',
+                controller: 'Error404Controller',
+                controllerAs: 'error404',
+                parent: 'main'
+            }).state('main.500', {
+                url: '/500',
+                templateUrl: 'app/main/500/500error.html',
+                controller: 'Error500Controller',
+                controllerAs: 'error500',
+                parent: 'main'
+            }).state('main.blank', {
+                url: '/blank',
+                templateUrl: 'app/main/blank/blank.html',
+                controller: 'BlankController',
+                controllerAs: 'blank',
+                parent: 'main'
+            }).state('main.pace', {
+                url: '/pace',
+                templateUrl: 'app/main/pace/pace.html',
+                controller: 'PaceController',
+                controllerAs: 'pace',
+                parent: 'main'
             });
         // .state('main', {
         //     url: '/main',
