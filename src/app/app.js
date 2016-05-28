@@ -196,6 +196,12 @@
                 controller: 'ProfileController',
                 controllerAs: 'profile',
                 parent: 'main'
+            }).state('main.lock', {
+                url: '/lock',
+                templateUrl: 'app/main/lock/lock.html',
+                controller: 'LockController',
+                controllerAs: 'lock',
+                parent: 'main'
             });
         // .state('main', {
         //     url: '/main',
